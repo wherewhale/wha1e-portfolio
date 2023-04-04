@@ -1,0 +1,38 @@
+// Namaing Convention
+// $C -> color
+// $F -> font size
+// $S -> size ( width, height 등 )
+// constant의 경우 대문자로 작성해 주세요.
+
+$C_POINT: #4295f2;
+$C_MAIN: #232323;
+$C_SUB: #474747;
+$C_WHITE: #fff;
+
+/* buttons */
+
+$C_BTN_BACKGROUND_LIGHT: #f8f8f8;
+$C_BTN_BACKGROUND_DARK: #474747;
+
+$C_BTN_LABEL_LIGHT: #232323;
+$C_BTN_LABEL_DARK: #f8f8f8;
+
+$C_BTN_BORDER_LIGHT: #232323;
+$C_BTN_BORDER_DARK: #f8f8f8;
+
+$C_BTN_BACKGROUND_LIGHT_ACTIVE: #4295f2;
+$C_BTN_BACKGROUND_DARK_ACTIVE: #4295f2;
+
+$C_BTN_LABEL_LIGHT_ACTIVE: #f8f8f8;
+$C_BTN_LABEL_DARK_ACTIVE: #232323;
+
+$C_BTN_BORDER_LIGHT_ACTIVE: #232323;
+$C_BTN_BORDER_DARK_ACTIVE: #f8f8f8;
+
+/* text */
+
+$C_TXT_FOOTER: #fff;
+
+/* background */
+
+$C_BG_FOOTER: #232323;

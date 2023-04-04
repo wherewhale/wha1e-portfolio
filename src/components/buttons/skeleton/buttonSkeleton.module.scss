@@ -1,0 +1,25 @@
+@use 'src/styles/theme/color' as c;
+
+.wrapper {
+  border-radius: 15px;
+  background-color: c.$C_BTN_BACKGROUND_LIGHT;
+  border: 2px solid c.$C_BTN_BORDER_LIGHT;
+  color: c.$C_BTN_LABEL_LIGHT;
+
+  &.light:active {
+    background-color: c.$C_BTN_BACKGROUND_LIGHT_ACTIVE;
+    border: 2px solid c.$C_BTN_BORDER_LIGHT_ACTIVE;
+    color: c.$C_BTN_LABEL_LIGHT_ACTIVE;
+  }
+
+  &.dark {
+    background-color: c.$C_BTN_BACKGROUND_DARK;
+    border: 2px solid c.$C_BTN_LABEL_DARK;
+    color: c.$C_BTN_LABEL_DARK;
+    &:active {
+      background-color: c.$C_BTN_BACKGROUND_DARK_ACTIVE;
+      border: 2px solid c.$C_BTN_BORDER_DARK_ACTIVE;
+      color: c.$C_BTN_LABEL_DARK_ACTIVE;
+    }
+  }
+}

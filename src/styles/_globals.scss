@@ -1,0 +1,15 @@
+@import './theme/color';
+@import './base';
+@import './reset';
+@import './font';
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+
+  body {
+    color: black;
+    background: #fff;
+  }
+}
