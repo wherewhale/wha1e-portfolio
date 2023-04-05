@@ -1,11 +1,10 @@
+import Image from 'next/image';
 import React from 'react';
+import { BsFillBuildingFill } from 'react-icons/bs';
+import { IoMdSchool } from 'react-icons/io';
+import profile from 'src/assets/images/home/profile.jpg';
 
 import styles from './intro.module.scss';
-import Image from 'next/image';
-import profile from 'src/assets/images/home/profile.jpg';
-import background from 'src/assets/images/home/background.jpg';
-import { IoMdSchool } from 'react-icons/io';
-import { BsFillBuildingFill } from 'react-icons/bs';
 
 interface Props {
   title?: string;

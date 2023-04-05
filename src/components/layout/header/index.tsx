@@ -1,7 +1,9 @@
 import cx from 'classnames';
-import Image from 'next/image';
-import React from 'react';
-import logo from 'src/assets/images/logo/logo.svg';
+import React, { useCallback, useState } from 'react';
+import { HiX } from 'react-icons/hi';
+import { RxHamburgerMenu } from 'react-icons/rx';
+
+import { Drawer } from '@/components/drawer';
 
 import styles from './header.module.scss';
 
@@ -15,6 +17,21 @@ interface Props {
 //TODO: 버튼 매핑
 
 const Header = ({ menuList, style, onView, onClick }: Props) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const onClose = useCallback(() => {
+    setIsOpen(false);
+  }, []);
+
+  const onOpen = useCallback(() => {
+    setIsOpen(true);
+  }, []);
+
+  const onClickDrawerButton = useCallback((page: string) => {
+    onClick(page);
+    setIsOpen(false);
+  }, []);
+
   return (
     <menu className={styles.container}>
       <div className={styles.logo}>Wha1e's Pacific</div>
@@ -30,6 +47,26 @@ const Header = ({ menuList, style, onView, onClick }: Props) => {
           </button>
         ))}
       </nav>
+      <div role="button" className={cx(styles.icon, { [styles.hide]: isOpen === true })} onClick={onOpen}>
+        <RxHamburgerMenu />
+      </div>
+      <Drawer isOpen={isOpen} onClose={onClose}>
+        <div className={styles.drawer}>
+          <div className={styles.drawerTop}>
+            <HiX onClick={onClose} />
+          </div>
+          {menuList.map((list, index) => (
+            <div
+              key={`mobile_button_${index}`}
+              role="button"
+              className={cx(styles.drawerButton, { [styles.active]: onView === menuList[index] })}
+              onClick={() => onClickDrawerButton(menuList[index])}
+            >
+              {menuList[index]}
+            </div>
+          ))}
+        </div>
+      </Drawer>
     </menu>
   );
 };

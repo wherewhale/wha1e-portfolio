@@ -1,4 +1,4 @@
-import { Html, Head, Main, NextScript } from 'next/document'
+import { Head, Html, Main, NextScript } from 'next/document';
 
 export default function Document() {
   return (
@@ -6,8 +6,10 @@ export default function Document() {
       <Head />
       <body>
         <Main />
+        <div id="modal-root" /> {/* Next의 모달 루트가 될 포탈! */}
+        <div id="drawer-root" /> {/* Next의 Drawer 루트가 될 포탈! */}
         <NextScript />
       </body>
     </Html>
-  )
+  );
 }

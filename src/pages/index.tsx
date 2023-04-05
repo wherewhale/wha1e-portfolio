@@ -50,10 +50,10 @@ export default function Home() {
           <Intro title="#Front-end" subTitle="상상을 현실로 만드는 개발자 손영호입니다." name="손영호" />
         </div>
         <div ref={about} id="ABOUT">
-          <About test="About" />
+          <About />
         </div>
         <div ref={contact} id="CONTACT">
-          <About test="Contact" />
+          CONTACT
         </div>
 
         <Footer userName="Wha1e" userJob="Front-end" />
