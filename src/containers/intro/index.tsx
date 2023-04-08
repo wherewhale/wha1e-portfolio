@@ -20,7 +20,7 @@ const Intro = ({ title, subTitle, name, background }: Props) => {
         <div className={styles.title}>{title}</div>
         <div className={styles.subTitle}>{subTitle}</div>
         <div className={styles.profile}>
-          <Image src={profile} width={300} height={300} alt="profile" />
+          <Image src={profile} width={300} height={300} alt="profile" priority={true} />
         </div>
       </div>
       <div className={styles.career}>

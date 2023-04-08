@@ -17,7 +17,7 @@ const SkillDialog = ({ title, srcs, alts, skills }: Props) => {
       <div style={{ display: 'flex', marginTop: '12px' }}>
         <div className={styles.iconContainer}>
           {srcs.map((icon, index) => (
-            <Image src={srcs[index]} key={`iconSrc_${srcs[index]}`} width={70} height={70} alt={alts[index]} />
+            <Image src={srcs[index]} key={`icon_src_${index}`} width={70} height={70} alt={alts[index]} />
           ))}
         </div>
         <div className={styles.textContainer}>

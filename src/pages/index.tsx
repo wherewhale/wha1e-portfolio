@@ -4,6 +4,7 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import Footer from '@/components/layout/footer';
 import Header from '@/components/layout/header';
 import About from '@/containers/about';
+import Contact from '@/containers/contact';
 import Intro from '@/containers/intro';
 
 export default function Home() {
@@ -16,7 +17,7 @@ export default function Home() {
   useEffect(() => {
     const option = {
       rootMargin: '10px', // rootMargin을 '10px 10px 10px 10px'로 설정
-      threshold: 0.5, // 타겟 엘리먼트가 교차영역에 진입했을 때, 교차영역에 타켓 엘리먼트의 50%가 있을 때, 교차 영역에 타켓 엘리먼트의 100%가 있을 때 observe가 반응한다.
+      threshold: 0.3, // 타겟 엘리먼트가 교차영역에 진입했을 때, 교차영역에 타켓 엘리먼트의 50%가 있을 때, 교차 영역에 타켓 엘리먼트의 100%가 있을 때 observe가 반응한다.
     };
 
     const observer = new IntersectionObserver(function useCallback(entries) {
@@ -41,7 +42,7 @@ export default function Home() {
       <Head>
         <title>Wha1e's Portfolio</title>
         <meta name="description" content="Wha1e's Portfolio" />
-        <meta name="viewport" content="width=device-width, initial-scale=1∂" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
@@ -53,7 +54,7 @@ export default function Home() {
           <About />
         </div>
         <div ref={contact} id="CONTACT">
-          CONTACT
+          <Contact />
         </div>
 
         <Footer userName="Wha1e" userJob="Front-end" />

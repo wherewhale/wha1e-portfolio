@@ -1,0 +1,52 @@
+@use '/src/styles/theme/color' as c;
+
+.swiper {
+  width: 100%;
+  position: relative;
+  margin-top: 20px;
+
+  .textContainer {
+    padding: 0 50px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.6;
+    color: c.$C_MAIN;
+
+    .title {
+      margin-top: 15px;
+      font-size: 24px;
+      font-weight: 500;
+    }
+
+    .text {
+      margin-top: 10px;
+      padding-left: 20px;
+      line-height: 1.5;
+      margin: 0;
+      padding-inline-start: 1.5em;
+    }
+  }
+
+  .next {
+    position: absolute;
+    top: -5px;
+    right: 0;
+    z-index: 2;
+  }
+
+  .prev {
+    position: absolute;
+    top: -5px;
+    right: 26px;
+    z-index: 2;
+  }
+
+  .nextDisabled {
+    cursor: default;
+  }
+
+  .prevDisabled {
+    cursor: default;
+  }
+}

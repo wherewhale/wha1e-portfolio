@@ -10,6 +10,7 @@
   justify-content: right;
   background-color: black;
   padding: 0 calc((100vw - 1024px) / 2);
+  z-index: 99;
 
   @include r.before(SD) {
     height: 50px;
