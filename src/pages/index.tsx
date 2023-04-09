@@ -17,7 +17,7 @@ export default function Home() {
   useEffect(() => {
     const option = {
       rootMargin: '10px', // rootMargin을 '10px 10px 10px 10px'로 설정
-      threshold: 0.3, // 타겟 엘리먼트가 교차영역에 진입했을 때, 교차영역에 타켓 엘리먼트의 50%가 있을 때, 교차 영역에 타켓 엘리먼트의 100%가 있을 때 observe가 반응한다.
+      threshold: 0.2, // 타겟 엘리먼트가 교차영역에 진입했을 때, 교차영역에 타켓 엘리먼트의 50%가 있을 때, 교차 영역에 타켓 엘리먼트의 100%가 있을 때 observe가 반응한다.
     };
 
     const observer = new IntersectionObserver(function useCallback(entries) {
@@ -46,17 +46,18 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Header menuList={['HOME', 'ABOUT', 'CONTACT']} style={'first'} onClick={onScrollTo} onView={viewPage} />
+        <Header menuList={['HOME', 'ABOUT', 'CONTACT']} style={'third'} onClick={onScrollTo} onView={viewPage} />
         <div ref={home} id="HOME">
           <Intro title="#Front-end" subTitle="상상을 현실로 만드는 개발자 손영호입니다." name="손영호" />
         </div>
+        <hr />
         <div ref={about} id="ABOUT">
           <About />
         </div>
+        <hr />
         <div ref={contact} id="CONTACT">
           <Contact />
         </div>
-
         <Footer userName="Wha1e" userJob="Front-end" />
       </main>
     </>

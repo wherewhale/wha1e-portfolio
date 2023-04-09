@@ -20,7 +20,7 @@ const About = () => {
     <div className={styles.container}>
       <div className={styles.block}>
         <div className={styles.title}>Skills</div>
-        <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+        <div className={styles.skillContainer}>
           <SkillDialog
             title="Front-end"
             srcs={[reactIcon, nextIcon]}
@@ -51,7 +51,7 @@ const About = () => {
           <SkeletonDialog
             href="https://1bee-palette.notion.site/4624ae187485435a9bddebfa68af9dd9"
             header="팔레트"
-            body={<Image src={paletteIcon} alt="palette" width={300} height={165} />}
+            body={<Image src={paletteIcon} alt="palette" width={278} height={160} />}
             footer={
               <p>
                 음악인 협업 플랫폼입니다.
@@ -68,7 +68,7 @@ const About = () => {
           <SkeletonDialog
             href="https://youtu.be/9xLLJXl1U_U"
             header="Hate-Wait"
-            body={<Image src={hatewaitIcon} alt="hatewait" width={300} height={165} />}
+            body={<Image src={hatewaitIcon} alt="hatewait" width={278} height={160} />}
             footer={
               <p>
                 식당 원격 대기열 프로젝트입니다.
@@ -85,7 +85,7 @@ const About = () => {
           <SkeletonDialog
             href="https://codemate.kr/"
             header="코드메이트"
-            body={<Image src={codemateIcon} alt="codemate" width={300} height={165} />}
+            body={<Image src={codemateIcon} alt="codemate" width={278} height={160} />}
             footer={
               <p>
                 코딩교육을 위한 사이트입니다.

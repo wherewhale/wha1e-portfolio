@@ -8,9 +8,15 @@
   width: 100vw;
   height: 60px;
   justify-content: right;
-  background-color: black;
+  background-color: c.$C_MAIN;
   padding: 0 calc((100vw - 1024px) / 2);
   z-index: 99;
+
+  @include r.before(LD) {
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+  }
 
   @include r.before(SD) {
     height: 50px;
@@ -26,7 +32,7 @@
     color: c.$C_WHITE;
     font-size: 30px;
 
-    @include r.before(SD) {
+    @include r.before(LD) {
       position: unset;
     }
   }
@@ -45,6 +51,10 @@
       font-size: 18px;
       padding: 22px 5px 32px 5px;
 
+      @include r.before(LD) {
+        padding-bottom: 12px;
+      }
+
       &.first {
         &.active {
           border-bottom: 6px solid c.$C_POINT;
@@ -56,6 +66,10 @@
         padding-right: 30px;
         &.active {
           background-color: c.$C_POINT;
+
+          @include r.before(LD) {
+            padding-bottom: 17px;
+          }
         }
       }
 
@@ -63,6 +77,9 @@
         margin-top: 15px;
         height: 30px;
         padding: 5px 15px;
+        @include r.before(LD) {
+          margin-top: 0;
+        }
         &.active {
           background-color: c.$C_POINT;
           border-radius: 15px;
