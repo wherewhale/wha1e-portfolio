@@ -27,10 +27,10 @@ const Header = ({ menuList, style, onView, onClick }: Props) => {
     setIsOpen(true);
   }, []);
 
-  const onClickDrawerButton = useCallback((page: string) => {
+  const onClickDrawerButton = (page: string) => {
     onClick(page);
     setIsOpen(false);
-  }, []);
+  };
 
   return (
     <menu className={styles.container}>
