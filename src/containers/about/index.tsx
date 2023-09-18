@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 import codemateIcon from 'src/assets/images/about/codemate.png';
+import copoolIcon from 'src/assets/images/about/copool.png';
 import hatewaitIcon from 'src/assets/images/about/hatewait.png';
 import nextIcon from 'src/assets/images/about/nextIcon.svg';
 import notionIcon from 'src/assets/images/about/notion.svg';
@@ -8,7 +9,6 @@ import paletteIcon from 'src/assets/images/about/palette.png';
 import qruIcon from 'src/assets/images/about/qru.png';
 import reactIcon from 'src/assets/images/about/react.svg';
 import slackIcon from 'src/assets/images/about/slack.svg';
-import copoolIcon from 'src/assets/images/about/copool.png';
 
 import SkeletonDialog from '@/components/dialogs/skeleton';
 import SkillDialog from '@/components/dialogs/skill';
