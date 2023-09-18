@@ -100,6 +100,8 @@ const CustomSwiper = () => {
             <li>- 개발 동아리 'Flight' 참여 (Front-end, Infra)</li>
             <br />
             <li>- 온라인 포트폴리오 제작 프로젝트 QRU 개발 (Front-end)</li>
+            <br />
+            <li>- 코딩 교육을 위한 플랫폼 Copool 개발 참여 (QA & ISSUE TRACKING)</li>
           </ul>
         </div>
       </SwiperSlide>

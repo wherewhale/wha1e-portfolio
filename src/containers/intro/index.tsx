@@ -42,7 +42,14 @@ const Intro = ({ title, subTitle, name, background }: Props) => {
           <BsFillBuildingFill />
           <div>
             <p style={{ fontWeight: 400 }}>HanBee</p>
-            Co-Founder/Developer (2022.08 ~ )
+            Co-Founder/CTO (2022.08 ~ )
+          </div>
+        </div>
+        <div className={styles.inline}>
+          <BsFillBuildingFill />
+          <div>
+            <p style={{ fontWeight: 400 }}>Huemonelab</p>
+            FE/Programming Tutor (2023.07 ~)
           </div>
         </div>
       </div>
