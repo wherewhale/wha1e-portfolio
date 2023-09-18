@@ -8,6 +8,7 @@ import paletteIcon from 'src/assets/images/about/palette.png';
 import qruIcon from 'src/assets/images/about/qru.png';
 import reactIcon from 'src/assets/images/about/react.svg';
 import slackIcon from 'src/assets/images/about/slack.svg';
+import copoolIcon from 'src/assets/images/about/copool.png';
 
 import SkeletonDialog from '@/components/dialogs/skeleton';
 import SkillDialog from '@/components/dialogs/skill';
@@ -68,7 +69,7 @@ const About = () => {
           <SkeletonDialog
             href="https://youtu.be/9xLLJXl1U_U"
             header="Hate-Wait"
-            body={<Image src={hatewaitIcon} alt="hatewait" width={278} height={160} />}
+            body={<Image src={hatewaitIcon} alt="Copool" width={278} height={160} />}
             footer={
               <p>
                 식당 원격 대기열 프로젝트입니다.
@@ -96,6 +97,22 @@ const About = () => {
                 <br />
                 해당 사이트에서, 초기 로그인, 회원가입 기능을 통해 소셜 로그인, 이메일 인증 프로세스를 구현하였으며, 탐색 페이지의 커리큘럼 컴포넌트에서
                 구성하였습니다. 현재는 업데이트되어, 모습이 많이 변화되었습니다.
+              </p>
+            }
+          />
+          <SkeletonDialog
+            href="https://copool.kr/"
+            header="Copool"
+            body={<Image src={copoolIcon} alt="Copool" width={278} height={80} />}
+            footer={
+              <p>
+                코딩교육을 위한 사이트입니다.
+                <br />
+                <br />
+                현재 진행중인 프로젝트로, <b className={styles.emphasis}>NextJS와 TailwindCSS, GraphQL, Recoil</b>을 이용하여 프로젝트를
+                진행하였습니다.
+                <br />
+                해당 사이트에서 이슈 트래킹, QA, 랜딩페이지 개발을 진행하고 있으며, 로그인 토큰 관련 이슈 해결과 검색 기능 구현, 스타일링 관련 이슈를 해결하였습니다.  
               </p>
             }
           />

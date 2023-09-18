@@ -23,8 +23,8 @@ const Contact = () => {
         <Link href="https://soundcloud.com/youngho-sohn-309556191" className={styles.wrapper} target="_blank" rel="noopener noreferrer">
           <ImSoundcloud /> SoundCloud : WHALESON
         </Link>
-        <Link href="https://soundcloud.com/youngho-sohn-309556191" className={styles.wrapper} target="_blank" rel="noopener noreferrer">
-          <RxNotionLogo /> Notion Blog : Wha1e's Story
+        <Link href="https://wha1estory.notion.site/eac4ffd7fedf4d26ab2375dd84f44d5d?v=7d46a9826dfa4b148634383bbab7008d&pvs=4" className={styles.wrapper} target="_blank" rel="noopener noreferrer">
+          <RxNotionLogo /> Notion Blog : Wha1e Wiki
         </Link>
       </div>
     </div>
